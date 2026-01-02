@@ -17,9 +17,8 @@ def pin_extractor(poems):
                 secret_code += str(len(words[line_idx]))
                 #Si la condicional no se cumple, es decir si el indice de la linea no existe, se añade un 0 a la variable con el string vacio
             else:
-                #Añade el valor de la variable secret_code, al final de la variable con una lista vacia llamada secret_codes
                 secret_code += '0'
-        #Retorna el valor de secret_codes
+        #Añade el valor de la variable secret_code, al final de la variable con una lista vacia llamada secret_codes y retorna el valor de secret_codes
         secret_codes.append(secret_code)
     return secret_codes
 
